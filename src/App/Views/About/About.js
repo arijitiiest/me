@@ -8,6 +8,7 @@ class About extends Component {
     return (
       <div>
         <Main>
+          This is About Page
         </Main>
       </div>
     );
