@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route, HashRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 
 import './Root.css';
 import Home from './Views/Home/Home';
@@ -13,7 +13,7 @@ import NotFound from './Views/NotFound/NotFound';
 function Root() {
   return (
     <div className="Root">
-      <Router>
+      <Router basename="/me">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
