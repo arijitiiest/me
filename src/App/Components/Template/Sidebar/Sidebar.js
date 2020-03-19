@@ -40,11 +40,11 @@ const Sidebar = () => {
         </p>
       </div>
 
-      <div className="section">
+      <div className="section footSec">
         <div className="icons">
           {contacts.map((contact, idx) => (
             <a href={contact.link} key={idx}>
-              <FontAwesomeIcon icon={contact.icon} className="icon" />
+              <FontAwesomeIcon icon={contact.icon} className="icon" size="lg" />
             </a>
           ))}
         </div>
@@ -52,7 +52,7 @@ const Sidebar = () => {
           made with <FontAwesomeIcon icon={faHeart} /> and{" "}
           <FontAwesomeIcon icon={faMugHot} />
         </div>
-        <div className="copyright">&copy; ARIJIT CHOWDHURY ARIJITIIEST.COM</div>
+        <div className="copyright">No &copy; copyright issues</div>
       </div>
     </div>
   );

@@ -1,0 +1,72 @@
+.contactContainer {
+    padding: 4%;
+    padding-bottom: 3rem;
+}
+
+.contactTitle {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 6px;
+    color: rgb(55, 55, 55);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin: 1rem 0 1.5rem;
+    padding: 2% 0 3%;
+}
+
+.contactHeader {
+    font-size: x-large;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #757575;
+}
+
+.contact_body {
+    font-size: medium;
+    color: rgb(45, 45, 45);
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto 1rem 1rem;
+    font-family: 'Roboto Mono', monospace;
+    font-size: medium;
+    color: #464646;
+}
+
+.form-control {
+    width: 60%;
+    height: 2.5rem;
+    margin: 1rem 0;
+    font-size: 15px;
+    border: none;
+    background-color: #d6d5d5;
+    padding: 5px 10px;
+}
+
+.message_input {
+    height: 5rem;
+}
+
+.contact_button {
+    width: 120px;
+    height: 40px;
+    background-color: #bbbbbb;
+    color: #464646;
+    font-size: large;
+    padding: 7px;
+    margin: 0rem 1rem 3rem;
+}
+
+.contact_button:hover {
+    background-color: #ece8e8;
+}
+
+@media (max-width: 1400px) {
+    .form-control {
+        width: 95%;
+    }
+}

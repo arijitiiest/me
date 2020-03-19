@@ -1,0 +1,26 @@
+.aboutContainer {
+  padding: 4%;
+}
+
+.aboutTitle {
+  font-size: 25px;
+  font-weight: 800;
+  font-family: "Raleway", sans-serif;
+  letter-spacing: 4px;
+  color: rgb(55, 55, 55);
+  border-bottom: 1px solid rgb(204, 204, 204);
+  margin: 1rem 0 3rem;
+  padding: 2% 0 3%;
+}
+
+.content_header {
+  font-size: medium;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.content_body {
+  font-size: medium;
+  color: rgb(45, 45, 45);
+  font-family: "Roboto Mono", monospace;
+}

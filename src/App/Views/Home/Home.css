@@ -1,5 +1,56 @@
-.Hi {
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 40px;
-    font-weight: 900;
+.homeAbout {
+  margin-left: 1.3rem;
+  margin-top: 5rem;
+  color: rgb(48, 48, 48);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  line-height: 1.5;
+  word-spacing: 2px;
+  margin-bottom: 3rem;
+}
+.abMe {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: rgb(146, 146, 146);
+}
+.amI {
+  margin: 1rem 0;
+  font-family: "Playfair Display", serif;
+  font-size: large;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: black;
+}
+
+.homeAboutLink {
+  padding-top: 1rem;
+  text-decoration: none;
+  color: rgb(14, 17, 26);
+  border-bottom: 1px dashed rgb(61, 61, 61);
+}
+
+.expertRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.expertColumn {
+  margin: 0rem 0 3rem;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1200px) {
+  .expertRow {
+    flex-direction: column;
+  }
+  .expertColumn {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

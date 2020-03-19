@@ -1,0 +1,23 @@
+.researchContainer {
+    padding: 4%;
+    padding-bottom: 3rem;
+}
+
+.researchTitle {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 6px;
+    color: rgb(55, 55, 55);
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin: 1rem 0 1.5rem;
+    padding: 2% 0 3%;
+}
+
+.researchText {
+    font-size: large;
+    color: rgb(45, 45, 45);
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 5%;
+}
+

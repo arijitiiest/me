@@ -1,0 +1,93 @@
+.projectCard {
+    width: 94%;
+    background-color: #ffffff;
+    border: 1px solid #9e9e9e;
+    align-content: center;
+    animation-name: projectCardAnimation;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes projectCardAnimation {
+    from{
+        transform: scale(1.04);
+    } 
+    to{
+        transform: scale(1);
+    } 
+}
+
+.projectCard:hover {
+    animation-name: projectCardAnimationHover;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes projectCardAnimationHover {
+    from{
+        transform: scale(1);
+    } 
+    to{
+        transform: scale(1.04);
+    } 
+}
+
+.projectImage {
+    width: 100%;
+    height: 260px;
+    border-top: 1px solid #9e9e9e;
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.projectDesc {
+    background-color: rgb(204, 204, 204);;
+    padding: 2px;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+.projectDesc:hover {
+    background-color: rgb(226, 226, 226);;;
+}
+
+.projectTitle {
+    padding: 5%;
+    padding-bottom: 0;
+    margin: 0;
+    font-weight: bolder;
+    font-size: large;
+    letter-spacing: 1px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.projectDate {
+    font-size: small;
+    text-align: left;
+    padding: 5%;
+    padding-top: 0;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    color: #424242;
+}
+
+.projectTech, .projectSub {
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+}
+
+.projectDetails {
+    font-weight: bold;
+
+}
+
+@media (max-width: 1100) {
+    .projectCard {
+        width: 100%;
+    }
+    .projectImage {
+        height: 200px;
+    }
+}

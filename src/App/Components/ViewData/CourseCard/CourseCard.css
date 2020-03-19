@@ -1,0 +1,75 @@
+.courseCol {
+  width: 75%;
+  flex: 50%;
+}
+
+@media (max-width: 900px) {
+  .courseCol {
+    width: 100%;
+  }
+}
+
+.courseCard {
+  border: 1px solid #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.courseTopic {
+  font-size: large;
+  font-weight: bolder;
+  font-family: "Roboto Mono", monospace;
+  color: #4d4d4d;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.courseLink {
+  text-decoration: none;
+  font-size: large;
+  font-weight: bolder;
+  font-family: "Roboto Mono", monospace;
+  color: #4d4d4d;
+  padding: 10px;
+  padding-left: 0;
+}
+
+.certificate {
+  float: right;
+}
+
+.certificateLink {
+  text-decoration: none;
+  color: rgb(98, 183, 253);
+  position: relative;
+}
+
+.certificateLink .certificateText {
+  visibility: hidden;
+  width: 120px;
+  background-color: rgb(9, 147, 172);
+  color: rgb(248, 248, 248);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  right: 107%;
+}
+
+.certificateLink:hover .certificateText {
+  visibility: visible;
+}
+
+.courseProvider {
+  font-size: small;
+  /* font-weight: bolder; */
+  font-family: "Roboto Mono", monospace;
+  color: #4d4d4d;
+  padding: 10px;
+  padding-left: 0;
+}

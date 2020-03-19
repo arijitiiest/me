@@ -11,9 +11,12 @@ const Main = props => (
       <div className="sidebar_content">
         <Sidebar />
       </div>
-      <div className="content main_content">
-          {props.children}
+      <div className="content">
+          <div className={"main_content " + props.className}>
+            {props.children}
+        </div>
       </div>
+      
     </div>
   </div>
 );

@@ -1,0 +1,78 @@
+.expertCard {
+  width: 94%;
+  max-width: 400px;
+  background-color: #ffffff;
+  align-content: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: 2px solid #6be0fd;
+}
+
+.expertIconContainer {
+  z-index: 1;
+  top: -40px;
+  position: relative;
+  text-align: center;
+}
+
+.topIcon {
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-bottom: 30px solid rgb(47, 167, 204);
+}
+
+.middleIcon {
+  height: 35px;
+  width: 90px;
+  background-color: rgb(47, 167, 204);
+}
+
+.expertIcon {
+  color: white;
+  display: inline-block;
+}
+
+.bottomIcon {
+  width: 0;
+  height: 0;
+  border-left: 45px solid transparent;
+  border-right: 45px solid transparent;
+  border-top: 30px solid rgb(47, 167, 204);
+}
+
+.expertTitle {
+  font-size: medium;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.expertDesc {
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: center;
+  font-size: small;
+  font-family: "Courier New", Courier, monospace;
+  overflow: auto;
+}
+
+.expertCard {
+  animation: fadeExp 6s normal;
+  -webkit-animation: fadeExp 6s normal;
+}
+
+@keyframes fadeExp {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  25% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

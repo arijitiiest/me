@@ -1,0 +1,72 @@
+.skillCard {
+    width: 95%;
+    border: 1px solid #ffffff;
+    margin: auto;
+    background-color: rgb(255, 246, 234);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imageContainer {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 195px;
+    padding: 1rem 10%;
+    border-bottom: 1px solid #cacaca;
+    background-color: white;
+}
+
+.skillImage {
+    width: 100%;
+    height: 100%;
+}
+
+.skillTopic {
+    font-size: larger;
+    font-weight: 200;
+    text-align: center;
+    color: #464646;
+}
+
+
+.skillCard:hover .flip-card-front {
+    transform: rotateY(90deg);
+    display: none;
+}
+
+.skillCard:hover .flip-card-back {
+    display: block;
+}
+
+.flip-card-back {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .skillTopic {
+        font-size: large;
+    }
+}
+
+.skillDesc {
+    padding: 1rem 10%;
+    height: 195px;
+    font-size: small;
+    font-family: 'Roboto Mono', monospace;
+    border-bottom: 1px solid #cacaca;
+    overflow-y: auto;
+}
+
+.knowMore {
+    font-size: larger;
+    font-weight: 100;
+    text-align: center;
+    color: #464646;
+}
+
+.flip-card-back {
+    height: 100%;
+}
+.flip-card-back a{
+    text-decoration: none;
+}

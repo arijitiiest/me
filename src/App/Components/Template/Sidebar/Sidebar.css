@@ -21,8 +21,8 @@
   display: block;
   margin-top: 50px;
   margin-bottom: 40px;
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   transform: rotate(90deg);
 }
@@ -31,6 +31,7 @@
   font-weight: bold;
   letter-spacing: 3px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: xx-large;
   color: rgb(0, 0, 0, 0.8);
 }
 
@@ -48,7 +49,7 @@
 .mail-me_link {
   border-bottom: 1px dashed #999;
   color: rgb(68, 68, 68);
-  font-size: small;
+  font-size: medium;
   text-decoration: none;
 }
 .mail-me_link:hover {
@@ -59,12 +60,12 @@
 .sidebar-about {
   text-align: left;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .sidebar-about-desc {
   text-align: left;
-  font-size: 13px;
+  font-size: 16px;
   word-spacing: 2px;
 }
 
@@ -91,15 +92,22 @@
 
 .motivation {
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   float: left;
 }
 
 .copyright {
   float: left;
   margin-bottom: 2rem;
-  font-size: x-small;
-  color: #999;
+  font-size: small;
+  font-weight: bold;
+  color: rgb(189, 189, 189);
+}
+
+.footSec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 @media (max-width: 1400px) {

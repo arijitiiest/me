@@ -17,6 +17,10 @@ const routes = [
         label: 'PROJECTS'
     },
     {
+        path: '/research',
+        label: 'PUBLICATIONS'
+    },
+    {
         path: '/contact',
         label: 'CONTACT'
     }
