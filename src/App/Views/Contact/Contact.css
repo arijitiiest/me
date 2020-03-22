@@ -45,10 +45,11 @@
     border: none;
     background-color: #d6d5d5;
     padding: 5px 10px;
+    border-radius: 5px;
 }
 
 .message_input {
-    height: 5rem;
+    height: 7rem;
 }
 
 .contact_button {

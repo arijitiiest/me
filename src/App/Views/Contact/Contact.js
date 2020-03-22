@@ -26,8 +26,6 @@ class Contact extends Component {
   }
 
   render() {
-    window.scrollTo(0, 0);
-
     return (
       <Main className="contactContainer">
         <p className="contactTitle">CONTACT</p>

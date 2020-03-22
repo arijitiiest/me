@@ -30,8 +30,7 @@ class Home extends Component {
             <br />
             <br />I have started reflecting my ideas and thougths through the
             medium of words recently so spelling and grammer mistaks are very
-            often.You can write me back if you spot any and don't want to live
-            anymore :P
+            often.You can write me back if you spot any  :P
           </div>
           <br />
           <br />

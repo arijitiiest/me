@@ -8,7 +8,7 @@
 
 .back_img {
   width: calc(100% + 2rem - 2px);
-  height: 600px;
+  height: calc(100% - 100px);
   z-index: 1000;
   opacity: 0.5;
   margin-left: -1rem;
