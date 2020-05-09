@@ -13,7 +13,7 @@ import Research from "./Views/Research/Research";
 function Root() {
   return (
     <div className="Root">
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
