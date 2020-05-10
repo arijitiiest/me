@@ -1,102 +1,115 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Axios from "axios";
 
 import Main from "../../Layout/Main";
 import "./Contact.css";
 import contacts from "../../data/contacts";
 
-class Contact extends Component {
-  constructor() {
-    super();
-    this.state = {
-      name: "",
-      contact: "",
-      message: ""
-    };
+const Contact = (props) => {
+  const [serverState, setServerState] = useState({
+    submitting: false,
+    status: null,
+  });
+  const handleServerResponce = (ok, msg, form) => {
+    setServerState({
+      submitting: false,
+      status: { ok, msg },
+    });
+    if (ok) {
+      form.reset();
+    }
+  };
 
-    this.onChange = this.onChange.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
-  }
+  const handleOnSubmit = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    setServerState({ submitting: true });
+    Axios({
+      method: "post",
+      url: "https://formspree.io/xnqgnjow",
+      data: new FormData(form),
+    })
+      .then((res) => {
+        handleServerResponce(true, "Submitted... Thanks!", form);
+      })
+      .catch((err) => {
+        handleServerResponce(false, err.response.data.error, form);
+      });
+  };
 
-  onChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-  }
-  onSubmit(e) {
-    // e.preventDefault()
-  }
+  return (
+    <Main className="contactContainer">
+      <p className="contactTitle">CONTACT</p>
 
-  render() {
-    return (
-      <Main className="contactContainer">
-        <p className="contactTitle">CONTACT</p>
-
-        <form noValidate onSubmit={this.onSubmit}>
+      <div style={{ marginBottom: "4rem"}}>
+        <form onSubmit={handleOnSubmit}>
           <p className="contactHeader">Coffee with me</p>
           <p className="contact_body">
-            I am always excited to work on some awesome projects..,
-            <br /> Message me and lets discuss.....
+            I am always excited to work on some awesome projects...,
+            <br /> Message me and lets discuss... &#128512;
           </p>
           <div className="form-group">
-            <label htmlFor="name">Name.</label>
+            <label htmlFor="full-name">Full Name.</label>
             <input
-              type="text"
               className="form-control"
+              id="full-name"
+              type="text"
               name="name"
               placeholder="Enter your name"
-              value={this.state.name}
-              onChange={this.onChange}
+              required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="name">Email or Phone No.</label>
+            <label htmlFor="email">Email</label>
             <input
-              type="text"
               className="form-control"
-              name="contact"
-              placeholder="Enter your Email or Phone no"
-              value={this.state.contact}
-              onChange={this.onChange}
+              id="email"
+              type="email" 
+              name="email"
+              placeholder="Enter your Email"
+              required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="email">Write a message.</label>
+            <label htmlFor="message">Message</label>
             <textarea
-              type="text"
               className="form-control message_input"
+              id="message"
               name="message"
               placeholder="Enter message"
-              value={this.state.email}
-              onChange={this.onChange}
-            />
+            ></textarea>
           </div>
-          <button type="submit" className="contact_button">
-            Send
-          </button>
-        </form>
-        <h3 style={{ color: "red" }}>
-          Message service is disabled right now...You can send a mail to me
-        </h3>
-        <br />
-
-        <p className="contact_body">
-          Or, you can directly mail me at:{" "}
-          <a
-            href="mailto:arijitchowdhury8926@gmail.com"
-            className="mail-me_link"
+          <button
+            className="contact_button"
+            type="submit"
+            disabled={serverState.submitting}
           >
-            ARIIJTCHOWDHURY8926@GMAIL.COM
+            Submit
+          </button>
+          {serverState.status && (
+            <p className={!serverState.status.ok ? "errorMsg" : "success"}>
+              {serverState.status.msg}
+            </p>
+          )}
+        </form>
+      </div>
+
+      <p className="contact_body">
+        Or, you can directly mail me at:{" "}
+        <a href="mailto:arijitchowdhury8926@gmail.com" className="mail-me_link">
+          ARIIJTCHOWDHURY8926@GMAIL.COM
+        </a>
+      </p>
+      <div className="icons">
+        {contacts.map((contact, idx) => (
+          <a href={contact.link} key={idx}>
+            <FontAwesomeIcon icon={contact.icon} className="icon" />
           </a>
-        </p>
-        <div className="icons">
-          {contacts.map((contact, idx) => (
-            <a href={contact.link} key={idx}>
-              <FontAwesomeIcon icon={contact.icon} className="icon" />
-            </a>
-          ))}
-        </div>
-      </Main>
-    );
-  }
-}
+        ))}
+      </div>
+    </Main>
+  );
+};
 
 export default Contact;
