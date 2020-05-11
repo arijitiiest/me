@@ -1,4 +1,4 @@
-import biochiop from './researchImages/biochip.png'
+import { biochip} from "../assets/index";
 
 const researchs = [
     {
@@ -6,7 +6,7 @@ const researchs = [
         desc: "Iterative Parallel Test to Detect and Diagnose of Multiple Defects for Digital Microfluidic Biochip",
         gitRepo: 'https://github.com/arijitiiest/Biochip-Testing',
         date: 'DECEMBER, 2019',
-        image: biochiop,
+        image: biochip,
         published_in: '2019 IEEE 28th Asian Test Symposium (ATS)',
         DOI: '10.1109/ATS47505.2019.00027',
         link: 'https://ieeexplore.ieee.org/document/8949416',

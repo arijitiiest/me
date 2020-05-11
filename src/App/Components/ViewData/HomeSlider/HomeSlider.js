@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import "./HomeSlider.css";
-import back_img from "../../../data/b.jpg";
 import { homeData } from "../../../data/homeData";
+import { background } from "../../../assets/index";
 
 const delay = 4000;
 const lengthData = homeData.length;
@@ -20,7 +20,7 @@ const HomeSlider = props => {
 
   return (
     <div className="Hi">
-      <img src={back_img} className="back_img" alt="Background"></img>
+      <img src={background} className="back_img" alt="Background"></img>
 
       <div className="HiSlide">
         {homeData[dataId].text1}

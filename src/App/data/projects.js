@@ -1,5 +1,4 @@
-import sorting from './projectImages/sorting.png';
-import pathfinding from './projectImages/pathfinding.png';
+import { pathfinding, sorting } from "../assets/index";
 
 const projects = [
     {

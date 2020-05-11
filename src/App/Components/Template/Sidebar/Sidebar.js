@@ -5,7 +5,7 @@ import { faHeart, faMugHot } from "@fortawesome/free-solid-svg-icons";
 
 import contacts from "../../../data/contacts";
 import "./Sidebar.css";
-import me from "./me.jpg";
+import { me } from "../../../assets/index";
 
 const Sidebar = () => {
   return (

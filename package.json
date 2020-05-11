@@ -5,7 +5,7 @@
     "node": "12.16.1",
     "npm": "6.13.4"
   },
-  "homepage": "https://arijitiiest.github.io/me",
+  "homepage": "https://arijitiiest.github.io",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
@@ -28,7 +28,8 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "bash": "npm run build && ./build.sh"
   },
   "eslintConfig": {
     "extends": "react-app"
