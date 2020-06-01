@@ -6,7 +6,7 @@
   font-size: 15px;
   line-height: 1.5;
   word-spacing: 2px;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 .abMe {
   font-family: "Courier New", Courier, monospace;
@@ -37,6 +37,7 @@
   justify-content: space-around;
   flex-wrap: wrap;
   margin-top: 4rem;
+  margin-bottom: 3rem;
 }
 
 .expertColumn {

@@ -4,6 +4,7 @@
   font-weight: 700;
   letter-spacing: 0.3rem;
   position: relative;
+  height: 450px;
 }
 
 .back_img {
@@ -15,8 +16,8 @@
   margin-top: -1rem;
   border: 1px solid rgb(143, 143, 143);
   border-bottom: none;
-  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
-    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
 }
 
 .HiSlide {
@@ -46,25 +47,25 @@
 }
 
 /* Animation */
-.HiSlide{
+.HiSlide {
   position: absolute;
-  animation: fade 4s infinite;
-  -webkit-animation: fade 4s infinite;
+  animation: fade 5s 1;
+  -webkit-animation: fade 5s 1;
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(120px);
   }
-  25% {
+  20% {
     opacity: 1;
     transform: translateY(0);
   }
-  80% {
+  /* 90% {
     opacity: 1;
   }
   100% {
     opacity: 0;
-  }
+  } */
 }

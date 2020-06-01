@@ -42,7 +42,7 @@ class About extends Component {
           technologies.
           <br />
           <br />
-          something coming soon...
+          Something coming soon...
         </p>
       </Main>
     );

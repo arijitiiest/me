@@ -1,5 +1,5 @@
 .skillCard {
-    width: 95%;
+    width: 90%;
     border: 1px solid #ffffff;
     margin: auto;
     background-color: rgb(255, 246, 234);
@@ -10,7 +10,7 @@
     display: inline-block;
     position: relative;
     width: 80%;
-    height: 195px;
+    height: 175px;
     padding: 1rem 10%;
     border-bottom: 1px solid #cacaca;
     background-color: white;
@@ -50,7 +50,7 @@
 
 .skillDesc {
     padding: 1rem 10%;
-    height: 195px;
+    height: 175px;
     font-size: small;
     font-family: 'Roboto Mono', monospace;
     border-bottom: 1px solid #cacaca;

@@ -48,6 +48,7 @@
   text-align: center;
   padding: 1rem;
   padding-top: 0;
+  height: 50px;
 }
 
 .expertDesc {
@@ -59,20 +60,4 @@
   font-size: small;
   font-family: "Courier New", Courier, monospace;
   overflow: auto;
-}
-
-.expertCard {
-  animation: fadeExp 6s normal;
-  -webkit-animation: fadeExp 6s normal;
-}
-
-@keyframes fadeExp {
-  0% {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  25% {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }

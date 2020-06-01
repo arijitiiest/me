@@ -109,7 +109,7 @@
   align-items: flex-start;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
   .sidebar {
     width: 100%;
     padding-left: 0;

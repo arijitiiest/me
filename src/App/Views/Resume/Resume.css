@@ -50,8 +50,13 @@
   border-bottom: 1px solid #c9c9c9;
 }
 
+.educationTopic {
+  font-size: large;
+  font-weight: 800;
+}
+
 .institute {
-  font-size: small;
+  font-size: medium;
   color: #3d3d3d;
   text-decoration: none;
 }
@@ -62,6 +67,126 @@
 .courses {
   margin-top: -100px;
   padding-top: 100px;
+}
+
+.activity {
+  padding-left: 5px;
+  margin-bottom: 1rem;
+}
+
+.activityHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.activityImage {
+  width: 140px;
+  height: 135px;
+  border: 1px solid #f3f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  overflow: hidden;
+}
+
+.activityHeaderText {
+  padding-left: 2rem;
+  font-family: "Roboto Mono", monospace;
+  padding-bottom: 1.5rem;
+  top: -10px;
+}
+
+.activityHeaderTitle {
+  font-size: x-large;
+  font-weight: bold;
+  color: #272727;
+}
+
+.activityHeaderPosition {
+  font-weight: 800;
+  font-size: medium;
+}
+
+.activityHeaderTime {
+  font-size: small;
+}
+
+.activityLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.activityLink {
+  text-decoration: none;
+  border: 1px solid #4aaeff;
+  background-color: #4aaeff;
+  color: white;
+  font-weight: 800;
+  padding: 5px;
+  margin-top: 0.5rem;
+  margin-right: 1.5rem;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.activityDesc {
+  margin-left: 1rem;
+  padding: 0.8rem;
+  color: #222222;
+  border-bottom: 1px solid rgb(204, 204, 204);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.activityDescText {
+  font-family: "Roboto Mono", monospace;
+  font-size: 9;
+  color: #414141;
+  padding-left: 1rem;
+  line-height: 1.5;
+}
+
+.achievementTitle {
+  font-family: "Roboto Mono", monospace;
+  font-size: large;
+  font-weight: 700;
+  padding-left: 1rem;
+  padding-bottom: 5px;
+  margin-top: 1rem;
+}
+
+.achievement2nd{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.achievementPosition {
+  font-family: "Roboto Mono", monospace;
+  font-size: medium;
+  font-weight: 550;
+  color: #3d3d3d;
+  padding-left: 1rem;
+  padding-bottom: 5px;
+}
+
+.achievementDate {
+  font-family: "Roboto Mono", monospace;
+  font-size: small;
+  color: #3d3d3d;
+  padding-left: 1rem;
+  padding-bottom: 5px;
+}
+
+.achievementDesc {
+  padding-left: 2rem;
+  color: #3d3d3d;
+  font-family: "Roboto Mono", monospace;
+  padding-top: 1rem;
+  font-size: medium;
+  line-height: 2;
 }
 
 .skillRow {
@@ -89,6 +214,7 @@
 .otherSkillRow {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .otherSkill {
@@ -99,9 +225,10 @@
   border-radius: 16px;
   background-color: rgb(235, 235, 235);
   color: #4fa6e0;
-  font-size: large;
+  font-size: medium;
   font-weight: bold;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0 10;
 }
 
 .programmingLang {
@@ -129,6 +256,7 @@
   display: flex;
   flex-direction: row;
   padding-left: 1.3rem;
+  flex-wrap: wrap;
 }
 
 .universityCourse {
@@ -146,14 +274,14 @@
   .skillCol {
     width: 50%;
   }
-  .otherSkillRow {
+  /* .otherSkillRow {
     flex-direction: column;
     text-align: center;
-  }
-  .progLangRow {
+  } */
+  /* .progLangRow {
     flex-direction: column;
     text-align: center;
-  }
+  } */
 }
 
 .referrence {

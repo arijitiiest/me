@@ -1,14 +1,48 @@
 import {
+  crio,
   reactjs,
   node,
   mongodb,
   django,
   graphql,
   opencv,
-  pytorch,
+  // pytorch,
   reactnative,
   tensorflow,
+  flask,
 } from "../assets/index";
+
+export const activities = [
+  {
+    title: "Crio.Do",
+    link: "https://crio.do",
+    portfolio:
+      "https://criodo.github.io/Crio-Launch-Feb-2020-crio-1999arijitchowdhury/",
+    certificate:
+      "https://raw.githubusercontent.com/CrioDo/Crio-Launch-Feb-2020-crio-1999arijitchowdhury/gh-pages/static/media/Crio-Launch-Feb-2020-Certificate.png",
+    image: crio,
+    timeLine: "31 Jan 2020 - 10 Apr 2020",
+    position: "Backend Developer",
+    desc: [
+      "Worked on <strong>QBox</strong> - secure file-sharing service. It is a customized version of the popularly available VSFTPD server.",
+      "Worked on <strong>QMoney</strong> - visual stock portfolio analyzer. It helps portfolio managers make trade recommendations for their clients.",
+      "Worked on <strong>QCharm</strong> - an online IDE. Programmers use QCharm to write source code and execute it inside the editor.",
+    ],
+  },
+];
+
+export const achievements = [
+  {
+    title: "Smart India Hackathon 2020 (World's largest hackathon)",
+    position: "Final participants",
+    date: "July, 2020",
+    desc: [
+      "Pavement Quality Index measurement from Road Images",
+      "Worked for Ministry of Rural Development, Govt. of India",
+      "Venue: Sri Venkateshwara College of Engineering, Bengaluru",
+    ],
+  },
+];
 
 export const skills = [
   {
@@ -61,12 +95,19 @@ export const skills = [
     link: "https://opencv.org/",
   },
   {
-    title: "PyTorch",
-    image: pytorch,
+    title: "Flask",
+    image: flask,
     desc:
-      "PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, developed by Facebook's AI Research lab (FAIR)",
-    link: "https://pytorch.org/",
+      "Flask is a micro web framework written in Python. Flask depends on the Jinja template engine and the Werkzeug WSGI toolkit. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.",
+    link: "https://flask.palletsprojects.com/en/1.1.x/",
   },
+  // {
+  //   title: "PyTorch",
+  //   image: pytorch,
+  //   desc:
+  //     "PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, developed by Facebook's AI Research lab (FAIR)",
+  //   link: "https://pytorch.org/",
+  // },
   {
     title: "Tensorflow",
     image: tensorflow,
@@ -86,6 +127,18 @@ export const otherSkills = [
     link: "https://expressjs.com/",
   },
   {
+    title: "MySQL",
+    link: "https://www.mysql.com/",
+  },
+  {
+    title: "PostgreSQL",
+    link: "https://www.postgresql.org/",
+  },
+  {
+    title: "SQLite",
+    link: "https://www.sqlite.org/index.html",
+  },
+  {
     title: "Firebase",
     link: "https://firebase.google.com/",
   },
@@ -94,8 +147,16 @@ export const otherSkills = [
     link: "https://git-scm.com/",
   },
   {
-    title: "SQLite",
-    link: "https://www.sqlite.org/index.html",
+    title: "Nginx",
+    link: "https://www.nginx.com/",
+  },
+  {
+    title: "Docker",
+    link: "https://www.docker.com/",
+  },
+  {
+    title: "AWS (EC2, S3)",
+    link: "https://aws.amazon.com/",
   },
 ];
 
@@ -128,6 +189,10 @@ export const programmingLangs = [
       link:
         "https://www.oracle.com/technetwork/java/javase/overview/index.html",
     },
+    {
+      title: "TypeScript",
+      link: "https://www.typescriptlang.org/",
+    },
   ],
   [
     {
@@ -149,10 +214,10 @@ export const courses = [
     link: "https://www.coursera.org/learn/machine-learning",
   },
   {
-    title: "Neural Networks and Deep Learning",
+    title: "Deep Learning Specialization",
     provider: "Coursera(Andrew Ng), DEEPLEARNING.AI",
-    certificate: "https://coursera.org/share/4c44daf22338dd9df080b9c6e381f764",
-    link: "https://www.coursera.org/learn/neural-networks-deep-learning",
+    certificate: "https://coursera.org/share/13e22be6060b641c558846f51dac9000",
+    link: "https://www.coursera.org/specializations/deep-learning",
   },
 ];
 
@@ -162,11 +227,11 @@ export const universityCourses = [
     provider: "IIEST Shibpur, IT301",
     link: "https://www.iiests.ac.in/",
   },
-  {
-    title: "Digital Logic & Circuit Design",
-    provider: "IIEST Shibpur, IT302",
-    link: "https://www.iiests.ac.in/",
-  },
+  // {
+  //   title: "Digital Logic & Circuit Design",
+  //   provider: "IIEST Shibpur, IT302",
+  //   link: "https://www.iiests.ac.in/",
+  // },
   {
     title: "Discrete Mathematics & Graph theory",
     provider: "IIEST Shibpur, IT303",
