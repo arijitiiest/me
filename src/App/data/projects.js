@@ -1,4 +1,15 @@
-import { pathfinding, sorting, hospital, malaria, covid, kth, uci } from "../assets/index";
+import {
+  mark,
+  pathfinding,
+  sorting,
+  hospital,
+  malaria,
+  covid,
+  face,
+  kth,
+  uci,
+  bengali
+} from "../assets/index";
 
 const projects = [
   {
@@ -32,19 +43,19 @@ const projects = [
     title: "Face Recognition",
     date: "MARCH, 2020",
     subtitle:
-      "Machine Learning Project to recognise faces from an image. It uses dlib's pre-trained face recognition model to find features from an face and matches with other face",
+      "Machine Learning Project to recognise faces from an image. It uses dlib's pre-trained face recognition model to find features from an face and matches with other face and face liveliness using eye blinking",
     technologies: "Python, Dlib, OpenCV",
-    image: pathfinding,
+    image: face,
     gitRepo: "https://github.com/arijitiiest/Face-Recognition",
   },
-//   {
-//     title: "Bengali Optical Character Recognition",
-//     date: "MARCH, 2020",
-//     subtitle: "",
-//     technologies: "Python, Scikit-Learn, Tensorflow",
-//     image: "",
-//     gitRepo: ""
-//   },
+  {
+    title: "Bengali Optical Character Recognition",
+    date: "MARCH, 2020",
+    subtitle: "Deep Learning Project to recognise Bengali Characters.",
+    technologies: "Python, Scikit-Learn, Tensorflow",
+    image: bengali,
+    gitRepo: "https://github.com/arijitiiest/Bengali-OCR",
+  },
   {
     title: "Maleria Detection",
     date: "JANUARY, 2020",
@@ -79,9 +90,19 @@ const projects = [
     date: "OCTOBER, 2019",
     subtitle:
       "Hospital Patient Record Management System, where MySQL used as a database. Doctor Assign, Patient Appointment, Doctor Prescription, Billing features are implemented",
-    technologies: "React JS, Node Js, Express Js, MySQL, JsonWebToken",
+    technologies: "React Js, Node Js, Express Js, MySQL, JsonWebToken",
     image: hospital,
     gitRepo: "https://github.com/arijitiiest/Hospital-Management-System",
+  },
+  {
+    title: "Live Markdown Editor",
+    date: "AUGUST, 2019",
+    subtitle:
+      "Live Markdown Editor is to write markdown code with live preview of your code",
+    link: "https://arijitiiest.github.io/markdown-editor/",
+    technologies: "React Js, Remarkable",
+    image: mark,
+    gitRepo: "https://github.com/arijitiiest/markdown-editor",
   },
 ];
 

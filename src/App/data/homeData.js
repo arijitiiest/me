@@ -5,7 +5,7 @@ export const homeData = [
   {
     text1: "Hi!",
     text2: "I'm Arijit",
-    link: "",
+    link: "https://docs.google.com/document/d/1lqjrRjfPKQQ2L9KEiMbTp3bZ8S5c663ZYOiy6kXCvLY/edit?usp=sharing",
     linkText: "VIEW CV",
     icon: faDownload
   },
@@ -19,7 +19,7 @@ export const homeData = [
   {
     text1: "I often",
     text2: "WRITE...",
-    link: "",
+    link: "https://medium.com/@arijit_chowdhury",
     linkText: "OPEN BLOG",
     icon: faBlogger
   }

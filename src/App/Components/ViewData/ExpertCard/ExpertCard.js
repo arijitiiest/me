@@ -8,7 +8,7 @@ import "./ExpertCard.css";
 const ExpertCard = (props) => {
   const { title, desc, icon, link } = props.data;
   AOS.init({
-    offset: 360,
+    offset: 300,
     duration: 1200,
   });
 

@@ -6,10 +6,13 @@ import {
   django,
   graphql,
   opencv,
-  // pytorch,
   reactnative,
   tensorflow,
   flask,
+  mysql,
+  postgres,
+  // docker,
+  express,
 } from "../assets/index";
 
 export const activities = [
@@ -46,6 +49,19 @@ export const achievements = [
 
 export const skills = [
   {
+    title: "MongoDB",
+    image: mongodb,
+    desc:
+      "MongoDB is an open source database that uses a document-oriented data model or simply JSON data [NOSQL].",
+    link: "https://www.mongodb.com/",
+  },
+  {
+    title: "Express.js",
+    image: express,
+    desc: "Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.",
+    link: "https://expressjs.com/",
+  },
+  {
     title: "React.js",
     image: reactjs,
     desc:
@@ -59,12 +75,13 @@ export const skills = [
       "It is a JavaScript runtime built on Chrome's V8 JavaScript engine. With Express.js framework it is used to make backend servers and REST APIs.",
     link: "https://nodejs.org/en/",
   },
+
   {
-    title: "MongoDB",
-    image: mongodb,
+    title: "React Native",
+    image: reactnative,
     desc:
-      "MongoDB is an open source database that uses a document-oriented data model or simply JSON data [NOSQL].",
-    link: "https://www.mongodb.com/",
+      "React Native is an open-source mobile application framework created by Facebook. It is used to develop applications for Android, iOS, Web and UWP by enabling developers to use React along with native platform capabilities.",
+    link: "https://reactnative.dev/",
   },
   {
     title: "GraphQL",
@@ -74,18 +91,31 @@ export const skills = [
     link: "https://graphql.org/",
   },
   {
-    title: "React Native",
-    image: reactnative,
-    desc:
-      "React Native is an open-source mobile application framework created by Facebook. It is used to develop applications for Android, iOS, Web and UWP by enabling developers to use React along with native platform capabilities.",
-    link: "https://reactnative.dev/",
-  },
-  {
     title: "Django",
     image: django,
     desc:
       "Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. It takes care of much of the hassle of Web development. It's free and open source. Ridiculously fast.",
     link: "https://www.djangoproject.com/",
+  },
+  {
+    title: "Flask",
+    image: flask,
+    desc:
+      "Flask is a micro web framework written in Python. Flask depends on the Jinja template engine and the Werkzeug WSGI toolkit. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.",
+    link: "https://flask.palletsprojects.com/en/1.1.x/",
+  },
+
+  {
+    title: "MySQL",
+    image: mysql,
+    desc: "MySQL is an open-source relational database management system (RDBMS).",
+    link: "https://www.mysql.com/",
+  },
+  {
+    title: "PostgreSQL",
+    image: postgres,
+    desc: "PostgreSQL is a free and open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance.",
+    link: "https://www.postgresql.org/",
   },
   {
     title: "OpenCV",
@@ -95,44 +125,24 @@ export const skills = [
     link: "https://opencv.org/",
   },
   {
-    title: "Flask",
-    image: flask,
-    desc:
-      "Flask is a micro web framework written in Python. Flask depends on the Jinja template engine and the Werkzeug WSGI toolkit. It has no database abstraction layer, form validation, or any other components where pre-existing third-party libraries provide common functions.",
-    link: "https://flask.palletsprojects.com/en/1.1.x/",
-  },
-  // {
-  //   title: "PyTorch",
-  //   image: pytorch,
-  //   desc:
-  //     "PyTorch is an open source machine learning library based on the Torch library, used for applications such as computer vision and natural language processing, developed by Facebook's AI Research lab (FAIR)",
-  //   link: "https://pytorch.org/",
-  // },
-  {
     title: "Tensorflow",
     image: tensorflow,
     desc:
       "TensorFlow is an open source library for numerical computation and large-scale machine learning. TensorFlow bundles together a slew of machine learning and deep learning models and algorithms.",
     link: "https://www.tensorflow.org/",
   },
+  // {
+  //   title: "Docker",
+  //   image: docker,
+  //   desc: "Docker is a set of platform as a service (PaaS) products that uses OS-level virtualization to deliver software in packages called containers.",
+  //   link: "https://www.docker.com/",
+  // },
 ];
 
 export const otherSkills = [
   {
     title: "Scikit-learn",
     link: "https://scikit-learn.org/stable/",
-  },
-  {
-    title: "Express.js",
-    link: "https://expressjs.com/",
-  },
-  {
-    title: "MySQL",
-    link: "https://www.mysql.com/",
-  },
-  {
-    title: "PostgreSQL",
-    link: "https://www.postgresql.org/",
   },
   {
     title: "SQLite",

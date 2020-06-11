@@ -7,6 +7,8 @@ import "./Contact.css";
 import contacts from "../../data/contacts";
 
 const Contact = (props) => {
+  window.scrollTo(0, 0);
+
   const [serverState, setServerState] = useState({
     submitting: false,
     status: null,

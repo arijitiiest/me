@@ -19,17 +19,17 @@ const Home = () => {
         <div>
           Hi, I'm Arijit from India and I'm currently a Information Technology
           undergraduate in Indian Institute of Engineering Science and
-          Technology,Shibpur. It's been quite a great experience during my 2
-          years of journey in the field of Computer-Science & IT. I have learnt
+          Technology, Shibpur. It's been quite a great experience during my {new Date().getFullYear() - 2017}
+          {" "}years of journey in the field of Computer-Science & IT. I have learnt
           many new topics which are intriguing and at the same time quite
           difficult . Maybe this is why I am in so love with this subject. I
           love exploring new technologies and often amazed by the progress we as
-          a human species have mad so far in the recent years.
+          a human species have made so far in the recent years.
           <br />
           <br />
           <br />I have started reflecting my ideas and thougths through the
           medium of words recently so spelling and grammer mistaks are very
-          often.You can write me back if you spot any :P
+          often. You can write me back if you spot any :P
         </div>
         <br />
         <br />

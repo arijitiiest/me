@@ -41,7 +41,7 @@ const contacts = [
   },
   {
     label: "Blogger",
-    link: "/",
+    link: "https://medium.com/@arijit_chowdhury",
     icon: faBlogger
   }
 ];
