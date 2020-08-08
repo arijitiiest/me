@@ -17,7 +17,7 @@ const Home = () => {
         <div className="abMe">ABOUT ME</div>
         <div className="amI">WHO AM I?</div>
         <div>
-          Hi, I'm Arijit from India and I'm currently a Information Technology
+          Hi, I'm Arijit from India and I'm currently an Information Technology
           undergraduate in Indian Institute of Engineering Science and
           Technology, Shibpur. It's been quite a great experience during my {new Date().getFullYear() - 2017}
           {" "}years of journey in the field of Computer-Science & IT. I have learnt
@@ -28,7 +28,7 @@ const Home = () => {
           <br />
           <br />
           <br />I have started reflecting my ideas and thougths through the
-          medium of words recently so spelling and grammer mistaks are very
+          medium of words recently so spelling and grammer mistakes are very
           often. You can write me back if you spot any :P
         </div>
         <br />

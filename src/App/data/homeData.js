@@ -5,7 +5,7 @@ export const homeData = [
   {
     text1: "Hi!",
     text2: "I'm Arijit",
-    link: "https://docs.google.com/document/d/1lqjrRjfPKQQ2L9KEiMbTp3bZ8S5c663ZYOiy6kXCvLY/edit?usp=sharing",
+    link: "https://drive.google.com/file/d/1EJRwWtri4rWW6hT3mZblhYGOhwhO1SI5/view?usp=sharing",
     linkText: "VIEW CV",
     icon: faDownload
   },

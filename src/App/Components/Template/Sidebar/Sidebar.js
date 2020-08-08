@@ -1,13 +1,18 @@
-import React from "react";
+import React, {useRef} from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart, faMugHot } from "@fortawesome/free-solid-svg-icons";
+import { faHeart, faMugHot, faVolumeUp } from "@fortawesome/free-solid-svg-icons";
 
 import contacts from "../../../data/contacts";
 import "./Sidebar.css";
-import { me } from "../../../assets/index";
+import { me, ACaudio } from "../../../assets/index";
 
 const Sidebar = () => {
+  const sound = useRef(null);
+
+  const playAudio = () => {
+    sound.current.play();
+  }
   return (
     <div className="sidebar">
       <div className="section">
@@ -17,6 +22,8 @@ const Sidebar = () => {
         <Link to="/" className="my-name-link">
           <h2 className="my-name">Arijit Chowdhury</h2>
         </Link>
+        <audio src={ACaudio} preload="auto" ref={sound}></audio>
+        <FontAwesomeIcon icon={faVolumeUp} className="icon" size="lg" onClick={playAudio} />
         <p className="mail-me">
           <a
             href="mailto:arijitchowdhury8926@gmail.com"

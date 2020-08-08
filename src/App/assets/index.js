@@ -1,6 +1,8 @@
 export const me = require("./home/me.jpg");
 export const background = require("./home/bg.jpg");
 
+export const ACaudio = require("./home/ac.mp3");
+
 export const crio = require("./activities/crio.png");
 
 export const django = require("./resume/django.png");
